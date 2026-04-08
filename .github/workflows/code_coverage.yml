@@ -12,5 +12,5 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-        - name: Code coverage
+        - name: Code Coverage
           uses: IvanseguferTech/CommonAnalysis@main
