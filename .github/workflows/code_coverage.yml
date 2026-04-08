@@ -13,4 +13,4 @@ jobs:
 
         steps:
         - name: Code Coverage
-          uses: IvanseguferTech/CommonAnalysis@main
+          uses: IvanseguferTech/CommonAnalysis/code-coverage.yml@main
