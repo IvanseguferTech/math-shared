@@ -1,0 +1,16 @@
+name: Code coverage
+run-name: Code coverage
+
+on:
+    pull_request:
+        branches: [ "main" ]
+
+    workflow_dispatch:
+
+jobs:
+    code_coverage:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Code coverage
+          uses: Ivansegufer/CommonAnalysis@main
