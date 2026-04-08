@@ -13,4 +13,4 @@ jobs:
 
         steps:
         - name: Code coverage
-          uses: Ivansegufer/CommonAnalysis@main
+          uses: IvanseguferTech/CommonAnalysis@main
