@@ -9,8 +9,7 @@ on:
 
 jobs:
     code_coverage:
-        runs-on: ubuntu-latest
-
-        steps:
-        - name: Code Coverage
-          uses: IvanseguferTech/CommonAnalysis/code-coverage.yml@main
+        name: Code Coverage
+        uses: IvanseguferTech/CommonAnalysis/.github/workflows/code-coverage.yml@main
+        with:
+            coverage_threshold: 80
