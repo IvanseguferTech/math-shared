@@ -1,0 +1,18 @@
+name: Code Analysis
+run-name: Code Analysis
+
+on:
+    pull_request:
+        branches: [ "main" ]
+    
+    workflow_dispatch:
+
+jobs:
+    code-analysis:
+        name: Code Analysis
+        uses: IvanseguferTech/CommonAnalysis/.github/workflows/code-analysis.yml@main
+        with:
+            project_key: ${{ vars.PROJECT_KEY }}
+            organization_key: ${{ vars.ORGANIZATION_KEY }}
+        secrets:
+            sonar_token: ${{ secrets.SONAR_TOKEN }}

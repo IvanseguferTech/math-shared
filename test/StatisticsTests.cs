@@ -5,7 +5,7 @@ namespace MathLibrary.Test;
 
 public class StatisticsTests
 {
-    private static readonly double[] Sample = { 2, 4, 4, 4, 5, 5, 7, 9 };
+    private static readonly double[] Sample = [2, 4, 4, 4, 5, 5, 7, 9];
 
     // ── Mean ─────────────────────────────────────────────────────────────────
 

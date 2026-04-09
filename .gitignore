@@ -212,3 +212,6 @@ FakesAssemblies/
 
 # Claude code
 .claude
+
+# Config
+.netconfig
