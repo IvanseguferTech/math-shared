@@ -8,9 +8,9 @@ on:
     workflow_dispatch:
 
 jobs:
-    code_coverage:
+    code-coverage:
         name: Code Coverage
         uses: IvanseguferTech/CommonAnalysis/.github/workflows/code-coverage.yml@main
         with:
-            min_limit: 60
-            max_limit: 80
+            min_limit: ${{ vars.COVERAGE_MIN_LIMIT }}
+            max_limit: ${{ vars.COVERAGE_MAX_LIMIT }}
