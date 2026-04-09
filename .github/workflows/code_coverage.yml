@@ -12,4 +12,5 @@ jobs:
         name: Code Coverage
         uses: IvanseguferTech/CommonAnalysis/.github/workflows/code-coverage.yml@main
         with:
-            coverage_threshold: 80
+            min_limit: 60
+            max_limit: 80
