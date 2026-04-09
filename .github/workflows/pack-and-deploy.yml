@@ -35,7 +35,9 @@ jobs:
               run: dotnet pack --configuration ${{ env.buildConfiguration }} --no-build --output ./nupkg
 
             - name: Push to Github Packages
+              env:
+                NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} \
+                dotnet nuget push ./nupkg/*.nupkg --api-key $NUGET_AUTH_TOKEN \
                     --source "https://nuget.pkg.github.com/IvanseguferTech/index.json
                     --skip-duplicate
