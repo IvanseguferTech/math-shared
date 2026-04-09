@@ -10,7 +10,7 @@ on:
 jobs:
     code-analysis:
         name: Code Analysis
-        uses: IvanseguferTech/CommonAnalysis/.github/workflows/code-coverage.yml@main
+        uses: IvanseguferTech/CommonAnalysis/.github/workflows/code-analysis.yml@main
         with:
             project_key: ${{ vars.PROJECT_KEY }}
             organization_key: ${{ vars.ORGANIZATION_KEY }}
