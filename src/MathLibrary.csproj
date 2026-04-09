@@ -1,9 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-  </PropertyGroup>
 
+    <PackageId>IvanseguferTech.MathLibrary</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ivansegufer</Authors>
+    <Description>Math shared library</Description>
+  </PropertyGroup>
 </Project>
