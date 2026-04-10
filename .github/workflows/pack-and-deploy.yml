@@ -39,5 +39,5 @@ jobs:
                 NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                 dotnet nuget push ./nupkg/*.nupkg --api-key $NUGET_AUTH_TOKEN \
-                    --source "https://nuget.pkg.github.com/IvanseguferTech/index.json
+                    --source "https://nuget.pkg.github.com/IvanseguferTech/index.json"
                     --skip-duplicate
